@@ -1,4 +1,4 @@
-﻿/* Monochromatic Sleek Palette */
+/* Monochromatic Sleek Palette */
 :root {
     --primary-black: #1a1a1a;
     --medium-grey: #4a4a4a;
@@ -6,7 +6,6 @@
     --white: #ffffff;
     --link-blue: #0000EE;
 }
-
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -16,13 +15,11 @@ body {
     line-height: 1.6;
 }
 
-
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
 
 /* Links: Blue, Underlined, Left-aligned */
 .blue-link {
@@ -32,8 +29,8 @@ body {
     text-align: left;
     margin-top: 15px;
     font-size: 0.95rem;
+    font-weight: bold;
 }
-
 
 /* Navbar */
 .navbar {
@@ -42,13 +39,11 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-
 .flex-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 
 .logo {
     font-weight: 800;
@@ -56,21 +51,20 @@ body {
     letter-spacing: -0.5px;
 }
 
-
 .logo span { color: var(--medium-grey); }
 
-
-.nav-links { list-style: none; display: flex; align-items: center; }
+.nav-links { list-style: none; display: flex; align-items: center; margin: 0; padding: 0; }
 .nav-links li a { text-decoration: none; color: var(--primary-black); margin-left: 20px; font-weight: 500; }
-
 
 .btn-cta {
     background: var(--primary-black);
     color: var(--white) !important;
     padding: 10px 20px;
     border-radius: 4px;
+    transition: background 0.3s;
 }
 
+.btn-cta:hover { background: var(--medium-grey); }
 
 /* Hero Section */
 .hero {
@@ -80,10 +74,8 @@ body {
     text-align: center;
 }
 
-
-.hero h1 { font-size: 3rem; margin-bottom: 20px; }
-.hero p { font-size: 1.2rem; color: #ccc; max-width: 700px; margin: 0 auto; }
-
+.hero h1 { font-size: 3rem; margin-bottom: 20px; padding: 0 10px; }
+.hero p { font-size: 1.2rem; color: #ccc; max-width: 700px; margin: 0 auto; padding: 0 15px; }
 
 .btn-hero {
     background-color: var(--white);
@@ -94,13 +86,10 @@ body {
     font-weight: bold;
     display: inline-block;
     margin-top: 30px;
-    transition: opacity 0.2s;
 }
-
 
 /* Services Grid */
 .section-title { text-align: center; margin: 60px 0 40px; font-size: 2rem; }
-
 
 .grid {
     display: grid;
@@ -109,17 +98,12 @@ body {
     margin-bottom: 80px;
 }
 
-
 .card {
     background: var(--light-grey);
     padding: 40px;
-    border-radius: 0px; /* Sharp corners for professional look */
+    border-radius: 0px; 
     border-left: 4px solid var(--primary-black);
 }
-
-
-.card h3 { margin-top: 0; }
-
 
 footer {
     text-align: center;
